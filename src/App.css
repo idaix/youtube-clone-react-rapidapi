@@ -1,0 +1,7 @@
+.light-bg{
+    background: #ffffff10;
+    backdrop-filter: blur(12px);
+}
+.main{
+    min-height: calc(100vh - 56px);
+}
