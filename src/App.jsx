@@ -20,7 +20,7 @@ function App() {
         {/* --- main --- */}
         <main className='h-full'>
           <Navbar />
-          <div className="container mx-auto main rounded-xl h-full">
+          <div className="container mx-auto main">
             <Routes>
               <Route path='/' element={<Feed />} />
               <Route path='/search/:q' element={<SearchFeed />} />

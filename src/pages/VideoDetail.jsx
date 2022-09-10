@@ -1,8 +1,10 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 const VideoDetail = () => {
+  const { id } = useParams()
   return (
-    <div>VideoDetail</div>
+    <div>Video Id : {id}</div>
   )
 }
 

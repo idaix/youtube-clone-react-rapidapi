@@ -9,7 +9,7 @@ const Videos = ({ videos }) => {
                 <div key={i}>
                     {item.id.videoId&& <VideoCard video={item}/>}
                     {item.id.channelId&& <ChannelCard channel={item}/>}
-                    {item.id.playlistId&& <VideoCard video={item}/>}
+                    {item.id.playlistId&& <PlaylistCard playlist={item}/>}
                 </div>
             ))}
         </div>
