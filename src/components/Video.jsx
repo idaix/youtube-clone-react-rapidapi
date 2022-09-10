@@ -1,9 +1,9 @@
-import React from 'react'
+import ReactPlayer from "react-player/youtube"
 
-const Video = ({ vId }) => {
-  return (
-    <div>Video</div>
-  )
-}
+const Video = ({ id }) => (
+  <div>
+    <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls />
+  </div>
+)
 
 export default Video

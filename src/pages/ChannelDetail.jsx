@@ -16,7 +16,7 @@ const ChannelDetail = () => {
     .then(videos => setVideos(videos?.items))
   }, [id])
 
-  console.log(channelDetails, videos)
+  // console.log(channelDetails, videos)
   return (
     <div className="p-3">
       <ChannelHead channelDetails={channelDetails} />
