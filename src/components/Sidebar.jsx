@@ -7,7 +7,7 @@ import { categories } from '../utils/constants'
 const Sidebar = ({ query, setQuery }) => {
   
   return (
-    <aside className='hidden md:block fixed h-screen md:w-60 lg:w-72 xl:w-80 overflow-auto p-2'>
+    <aside className='hidden md:block fixed top-0 left-0 h-screen md:w-60 lg:w-72 xl:w-80 overflow-auto p-2'>
       <div className="light-bg h-full rounded-xl p-3">
         <div className='px-3'>
           <Link to='/'>
