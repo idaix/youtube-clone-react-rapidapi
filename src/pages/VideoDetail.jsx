@@ -24,7 +24,7 @@ const VideoDetail = () => {
   return (
     <div className='p-2'>
       <Video id={id} />
-      <div className="py-4">
+      <div className="pb-4">
         <h1 className='text-xl'>{title}</h1>
         <ul className="flex gap-5 text-slate-400 text-sm">
           <li className='flex gap-2 items-center'>

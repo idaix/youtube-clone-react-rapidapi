@@ -1,8 +1,8 @@
 import ReactPlayer from "react-player/youtube"
 
 const Video = ({ id }) => (
-  <div>
-    <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls />
+  <div className="aspect-video w-full">
+    <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} controls width='100%' />
   </div>
 )
 
