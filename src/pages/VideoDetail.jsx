@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { AiOutlineComment, AiOutlineEye, AiOutlineLike } from 'react-icons/ai'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { Loader, Video, Videos } from '../components'
 import { fetchFromApi } from '../utils/fetchFromApi'
 const VideoDetail = () => {
@@ -24,7 +24,7 @@ const VideoDetail = () => {
   return (
     <div className='p-2'>
       <Video id={id} />
-      <div className="pb-4">
+      <div className="py-4">
         <h1 className='text-xl'>{title}</h1>
         <ul className="flex gap-5 text-slate-400 text-sm">
           <li className='flex gap-2 items-center'>
@@ -40,6 +40,12 @@ const VideoDetail = () => {
             {commentCount} Comment
           </li>
         </ul>
+        <div className="my-2">
+          By 
+          <Link to={`/channel/${channelId}`} >
+            <span className='hover:text-primary duration-300'> {channelTitle}</span>
+          </Link>
+        </div>
       </div>
       <Videos videos={videos} />
     </div>
