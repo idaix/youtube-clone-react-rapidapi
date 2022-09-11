@@ -4,7 +4,7 @@ import { Video } from '../components'
 const ChannelIntro = ({ video }) => {
   return (
     <div>
-        <Video vId={video?.id?.videoId} />
+        <Video id={video?.id?.videoId} />
         <h3 className="font-semibold">{video?.snippet?.title}</h3>
     </div>
   )
